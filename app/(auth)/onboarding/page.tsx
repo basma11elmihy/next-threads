@@ -5,11 +5,7 @@ import { currentUser } from "@clerk/nextjs";
 async function Page(){
     const user = await currentUser();
     const userInfo = {
-        _id: "",
-        username: "",
-        name: "",
-        bio:"",
-        image:""
+    
     };
     const userData = {
         id: user?.id,
